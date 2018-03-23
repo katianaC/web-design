@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twi</title>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		body {
+			font-family: "Helvetica Neue";
+			box-sizing: border-box;
+			font-size: 13px;
+			font-weight: 700;
+			color: #f4adf0;
+		}
+
+		#navbar {
+			background-color: #d181cc;
+			border-top: 3px solid pink;
+		}
+
+		#left-sidebar {
+			background-color: #d181bf;
+		}
+
+		#center {
+			padding-top: 5px;
+			background-color: #f2a4d7;
+		}
+
+		#right-sidebar {
+			background-color: #db85bd;
+		}
+
+		#footer {
+			background-color: #ff59c5;
+		}
+
+		.post-image {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		.post {
+			background-color: #c166a1;
+			border-bottom: 1px solid #8e3a71;
+			padding: 5px;
+		}
+
+		.post:hover {
+			border-left: 2px solid #efcbe3;
+		}
+
+		#navbar-ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.navbar-li {
+			display: inline-block;
+			padding-right: 40px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			line-height: 30px;
+		}
+
+		.fa-deploydog {
+			color: pink;
+			font-size: 30px;
+		}
+
+		.profile-image {
+			margin-top: -150px;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border: 5px solid #c97aaf;
+		}
+
+		.profile-info {
+			margin-top: 5px;
+			background-color: #f276c9;
+			padding: 5px;
+		}
+
+		.profile-info-ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#profile-info-name {
+			font-size: 20px;
+		}
+
+		#profile-info-handle {
+			color: blue;
+		}
+
+		#homepage-title {
+			font-family: Lobster, cursive;
+			color: green;
+			font-size: 20px;
+			padding-right: 5px;
+		}
+
+		.profile-category {
+			color: #d15eab;
+		}
+
+		.options-ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			background-color: #ff38bd;
+			width: 100%;
+			padding-left: 10px;
+		}
+
+		.options-li {
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 10px;
+		}
+
+		.options-li:hover {
+			color: red;
+			cursor: pointer;
+		}
+
+		.options {
+			background-color: #ff49f2;
+		}
+
+		.cover-photo {
+			background-image: url(http://www.theamateurmediablog.com/uploads/3/8/3/9/3839731/8807772.jpg);
+			height: 300px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#icon-li {
+			padding-right: 10px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="NAVBar" class="col-12">
+				<ul id="NAVBar-ul">
+					<li class="NAVBar-li"><i class="fab fa-deploydog"></i></i></li>
+					<li class="NAVBar-li"><a href="https://google.com">Home</a></li>
+					<li class="NAVBar-li"><a href="https://google.com">Posts</a></li>
+					<li class="NAVBar-li"><a href="https://google.com">Profile</a></li>
+					<li class="NAVBar-li"><a href="https://google.com">Notifications</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row cover-photo">
+			
+		</div>
+
+		<div id="main-content" class="row">
+			<div id="left-sidebar" class="col-2">
+				<div class="profile-image-container"><img class="profile-image" src="https://static.comicvine.com/uploads/original/11118/111184078/4667002-5706150299-coura.jpg"></div>
+				<div class="profile-info">
+					<ul class="profile-info-ul">
+						<li id="profile-info-name" class="profile-info-li">Courage</li>
+						<li id="profile-info-handle" class="profile-info-li">@Courage the Dog</li>
+						<li class="profile-info-li"><span class="profile-category">Location:</span> The middle of no where</li>
+						<li class="profile-info-li"><span class="profile-category">Interests:</span> Protecting the farm, Protecting Murlel, Being the best dog on the farm</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<div id="center" class="col-7">
+				<div class="post row">
+					<div class="col-4 img-side">
+						<img class="post-image" src="https://orig00.deviantart.net/2a6e/f/2012/242/8/6/corage_el_perro_cobarde___courage_the_cowardly_dog_by_ctlna0199-d5d04bq.jpg">
+					</div>
+					<div class="col-4 text-side">
+						<p>Courage @the Dog - 3/1/2018</p>
+						<p>Murlel has some nice softer I just put it on my fur and it's smells so nice Yay!</p>
+					</div>
+				</div>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-4 img-side">
+						<img class="post-image" src="http://d3ef4v2vwabma7.cloudfront.net/thumbnail/medium/cn_character_img_pc_1317401739.jpg">
+					</div>
+					<div class="col-4 text-side">
+						<p>Murlel @the Framer's Wife - 3/1/2018</p>
+						<p>Oh courage you silly dog</p>
+					</div>
+						</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-4 img-side">
+						<img class="post-image" src="https://pbs.twimg.com/media/ByEojhKCMAAvwQo.jpg">
+					</div>
+					<div class="col-4 text-side">
+						<p>Eustace @the Farmer - 3/1/2018</p>
+						<p>Murlel where's my clothes?!</p>
+					</div>
+						</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="right-sidebar" class="col-3 img-side">
+				<img class="post-image" src="http://d3ef4v2vwabma7.cloudfront.net/thumbnail/medium/cn_character_img_pc_1317401739.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Murlel @the farm's wife - 3/1/2018</p>
+						<p>Alright Eustance I'm coming with your clothes already Eustance!.</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://pbs.twimg.com/media/ByEojhKCMAAvwQo.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Eustace @the Farmer - 3/1/2018
+						<p>And that stpubit dog better not be doing any girly things</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="http://superawesomevectors.com/wp-content/uploads/2017/05/courage-the-cowardly-dog-vector-800x566.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Courage @the Dog - 3/1/2018</p>
+						<p>OH NO</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
